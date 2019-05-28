@@ -32,6 +32,7 @@
                 android:textColor="#ffffff"/>
 
             <EditText
+                android:id="@+id/etLogin"
                 android:hint="Email"
                 android:textColorHint="#fff"
                 android:textSize="20dp"
@@ -43,8 +44,10 @@
 
 
             <EditText
+                android:id="@+id/etPassword"
+                android:drawableRight="@drawable/eye"
                 android:hint="Password"
-                android:textColorHint="#fff"
+                android:textColorHint="#ffffff"
                 android:textSize="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
@@ -53,13 +56,27 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/btnLogin"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
                 android:layout_width="match_parent"
                 android:text="Login"
                 android:textSize="20dp"
-                android:layout_height="55dp" />
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button"
+                android:layout_height="45dp" />
+
+            <!--<Button-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginRight="60dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="Login"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:background="@drawable/rounded_button"-->
+                <!--android:layout_height="45dp" />-->
 
         </LinearLayout>
 </RelativeLayout>
