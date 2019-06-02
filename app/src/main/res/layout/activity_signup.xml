@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#303030"
+    android:background="#343b45"
     tools:context=".LoginActivity">
 
 
@@ -28,14 +28,16 @@
             android:hint="Full Name"
             android:textColorHint="#fff"
             android:textSize="20dp"
+            android:background="#3e4750"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="80dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="35dp" />
 
 
         <EditText
+            android:background="#3e4750"
             android:id="@+id/etEmail"
             android:hint="Email"
             android:textColorHint="#ffffff"
@@ -44,9 +46,10 @@
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="35dp" />
 
         <EditText
+            android:background="#3e4750"
             android:id="@+id/etRegisterPassword"
             android:drawableRight="@drawable/eye"
             android:hint="Password"
@@ -56,9 +59,10 @@
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="35dp" />
 
         <EditText
+            android:background="#3e4750"
             android:id="@+id/etConfirmRegisterPassword"
             android:drawableRight="@drawable/eye"
             android:hint="Confirm Password"
@@ -68,9 +72,10 @@
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="35dp" />
 
         <EditText
+            android:background="#3e4750"
             android:id="@+id/etContact"
             android:hint="Contact"
             android:textColorHint="#ffffff"
@@ -79,11 +84,11 @@
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="35dp" />
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="120dp"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
             android:layout_width="match_parent"
