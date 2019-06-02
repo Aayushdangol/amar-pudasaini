@@ -25,7 +25,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         viewPager=findViewById(R.id.viewpager);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Home(),"Login");
+        adapter.addFragment(new Home(),"Home");
         adapter.addFragment(new Recommended(),"Recommended");
         adapter.addFragment(new Movies(),"Movies");
         adapter.addFragment(new TV(),"TV");
