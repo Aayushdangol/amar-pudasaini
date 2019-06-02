@@ -15,9 +15,9 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/logodashboard"
             />
@@ -29,9 +29,9 @@
             android:background="@drawable/roundbtnsearch"
             android:textColorHint="#fff"
             android:textAlignment="textEnd"
-            android:layout_marginTop="29dp"
+            android:layout_marginTop="21dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="70dp"/>
+            android:layout_marginRight="60dp"/>
 
     </LinearLayout>
 
