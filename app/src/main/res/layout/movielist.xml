@@ -5,14 +5,14 @@
     android:background="#343b45">
 
     <ImageView
-        android:id="@+id/moviePoster"
+        android:id="@+id/imgmoviePoster"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/Spider-Man"/>
+        android:background="@drawable/logodashboard"/>
 
         <TextView
-            android:layout_below="@id/moviePoster"
-            android:id="@+id/movieTitle"
+            android:layout_below="@id/imgmoviePoster"
+            android:id="@+id/tvmovieTitle"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:textColor="#fcfefb"
@@ -23,9 +23,9 @@
             android:textSize="20sp"/>
 
         <TextView
-            android:layout_below="@id/moviePoster"
+            android:layout_below="@id/imgmoviePoster"
             android:layout_alignParentRight="true"
-            android:id="@+id/movieRating"
+            android:id="@+id/tvmovieRating"
             android:textColor="#fcfefb"
             android:layout_marginRight="20sp"
             android:textStyle="bold"
@@ -38,8 +38,8 @@
 
     <TextView
         android:textColor="#fcfbfa"
-        android:layout_below="@id/movieTitle"
-        android:id="@+id/movieGenre"
+        android:layout_below="@id/tvmovieTitle"
+        android:id="@+id/tvmovieGenre"
         android:textStyle="italic"
         android:layout_marginLeft="20sp"
         android:layout_width="wrap_content"
@@ -49,9 +49,9 @@
 
     <TextView
         android:textColor="#fcfbfa"
-        android:layout_below="@id/movieRating"
+        android:layout_below="@id/tvmovieRating"
         android:layout_alignParentRight="true"
-        android:id="@+id/movieDate"
+        android:id="@+id/tvmovieDate"
         android:textStyle="italic"
         android:layout_marginRight="20sp"
         android:layout_width="wrap_content"

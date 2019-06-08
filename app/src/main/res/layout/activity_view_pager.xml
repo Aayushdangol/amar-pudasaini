@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/imgDashboardlogo"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
@@ -27,7 +28,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etSearch"
+                android:id="@+id/etDashboardSearch"
                 android:layout_width="260dp"
                 android:layout_height="40dp"
                 android:hint="search"

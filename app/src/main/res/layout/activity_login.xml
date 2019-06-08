@@ -8,7 +8,7 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/loginLogo"
+        android:id="@+id/imgloginLogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
@@ -17,7 +17,7 @@
 
         <LinearLayout
             android:layout_marginTop="40dp"
-            android:layout_below="@+id/loginLogo"
+            android:layout_below="@+id/imgloginLogo"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
@@ -32,7 +32,7 @@
                 android:textColor="#ffffff"/>
 
             <EditText
-                android:id="@+id/etLogin"
+                android:id="@+id/etusername"
                 android:hint="Email"
                 android:textColorHint="#fff"
                 android:textSize="20dp"
