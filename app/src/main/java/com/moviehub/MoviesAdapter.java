@@ -15,12 +15,10 @@ import model.Movie;
 
 public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewHolder> {
 
-    private List<Movie> movieList;
-    private Context context;
+    private List<Movie> movies;
 
-    public MoviesAdapter(List<Movie> movieList, Context context) {
-        this.movieList = movieList;
-        this.context = context;
+    public MoviesAdapter(List<Movie> movies, Context context) {
+        this.movies = movies;
     }
 
     @NonNull
@@ -34,26 +32,34 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
     @Override
     public void onBindViewHolder(@NonNull MovieViewHolder movieViewHolder, int i) {
 
+        movieViewHolder.bind(movies.get(i));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return movies.size();
     }
 
     public class MovieViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView imgmoviePoster;
+        //ImageView imgmoviePoster;
         TextView tvmovieTitle, tvmovieRating, tvmovieDate, tvmovieGenre;
 
         public MovieViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgmoviePoster=itemView.findViewById(R.id.imgmoviePoster);
+           // imgmoviePoster=itemView.findViewById(R.id.imgmoviePoster);
             tvmovieTitle=itemView.findViewById(R.id.tvmovieTitle);
             tvmovieRating=itemView.findViewById(R.id.tvmovieRating);
             tvmovieGenre=itemView.findViewById(R.id.tvmovieGenre);
             tvmovieDate=itemView.findViewById(R.id.tvmovieDate);
 
+        }
+
+        public void bind(Movie movie) {
+            tvmovieDate.setText(movie.getReleaseDate().split("-")[0]);
+            tvmovieTitle.setText(movie.getTitle());
+            tvmovieRating.setText(String.valueOf(movie.getRating()));
+            tvmovieGenre.setText("");
         }
     }
 }
