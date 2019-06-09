@@ -8,7 +8,8 @@
         android:id="@+id/imgmoviePoster"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/logodashboard"/>
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"/>
 
         <TextView
             android:layout_below="@id/imgmoviePoster"

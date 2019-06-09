@@ -1,18 +1,51 @@
 package model;
 
-public class Movie {
-    private String title;
-    private String rating;
-    private String genre;
-    private String date;
-    private String poster;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-    public Movie(String title, String rating, String genre, String date, String poster) {
+import java.util.List;
+
+public class Movie {
+
+    @SerializedName("id")
+    @Expose
+    private int id;
+
+    @SerializedName("title")
+    @Expose
+    private String title;
+
+    @SerializedName("vote_average")
+    @Expose
+    private float rating;
+
+    @SerializedName("genre_ids")
+    @Expose
+    private List<Integer> genreIds;
+
+    @SerializedName("release_date")
+    @Expose
+    private String releaseDate;
+
+    @SerializedName("poster_path")
+    @Expose
+    private String posterPath;
+
+    public Movie(int id, String title, float rating, List<Integer> genreIds, String releaseDate, String posterPath) {
+        this.id = id;
         this.title = title;
         this.rating = rating;
-        this.genre = genre;
-        this.date = date;
-        this.poster = poster;
+        this.genreIds = genreIds;
+        this.releaseDate = releaseDate;
+        this.posterPath = posterPath;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -23,35 +56,35 @@ public class Movie {
         this.title = title;
     }
 
-    public String getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 
-    public String getGenre() {
-        return genre;
+    public List<Integer> getGenreIds() {
+        return genreIds;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setGenreIds(List<Integer> genreIds) {
+        this.genreIds = genreIds;
     }
 
-    public String getDate() {
-        return date;
+    public String getReleaseDate() {
+        return releaseDate;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
     }
 
-    public String getPoster() {
-        return poster;
+    public String getPosterPath() {
+        return posterPath;
     }
 
-    public void setPoster(String poster) {
-        this.poster = poster;
+    public void setPosterPath(String posterPath) {
+        this.posterPath = posterPath;
     }
 }
