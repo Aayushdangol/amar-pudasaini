@@ -1,5 +1,6 @@
 package Interface;
 
+import model.GenreResponse;
 import model.MoviesResponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -11,5 +12,11 @@ public interface MovieAPI {
             @Query("api_key") String apiKey,
             @Query("language") String language,
             @Query("page") int page
+    );
+
+    @GET("genre/movies/list")
+    Call<GenreResponse> getGenres(
+            @Query( "api_key" ) String apiKey,
+            @Query( "language" ) String language
     );
 }
