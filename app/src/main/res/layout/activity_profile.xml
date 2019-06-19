@@ -8,22 +8,22 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/tvRegister"
+        android:id="@+id/tvProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MovieHub Account"
+        android:text="Edit Profile"
         android:textSize="25dp"
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:textColor="#ffffff"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgRegisterProfile"
+        android:id="@+id/imgProfile"
         android:layout_width="85dp"
-        android:layout_below="@id/tvRegister"
+        android:layout_below="@id/tvProfile"
         android:layout_centerHorizontal="true"
         android:layout_height="85dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/profileicon" />
 
 
@@ -32,11 +32,11 @@
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_below="@+id/imgRegisterProfile"
+        android:layout_below="@+id/imgProfile"
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/etName"
+            android:id="@+id/etProfileName"
             android:paddingLeft="5dp"
             android:hint="Full Name"
             android:textColorHint="#fcfefb"
@@ -55,7 +55,7 @@
         <EditText
             android:paddingLeft="5dp"
             android:background="#3e4750"
-            android:id="@+id/etEmail"
+            android:id="@+id/etProfileEmail"
             android:drawableLeft="@drawable/mail"
             android:drawablePadding="10dp"
             android:hint="Email"
@@ -72,7 +72,7 @@
             android:paddingLeft="5dp"
             android:drawableLeft="@drawable/pass"
             android:background="#3e4750"
-            android:id="@+id/etRegisterPassword"
+            android:id="@+id/etProfilePassword"
             android:hint="Password"
             android:drawablePadding="10dp"
             android:textColorHint="#fcfefb"
@@ -88,7 +88,7 @@
             android:paddingLeft="5dp"
             android:drawableLeft="@drawable/pass"
             android:background="#3e4750"
-            android:id="@+id/etConfirmRegisterPassword"
+            android:id="@+id/etConfirmProfilePassword"
             android:hint="Confirm Password"
             android:drawablePadding="10dp"
             android:textColorHint="#fcfefb"
@@ -103,7 +103,7 @@
         <EditText
             android:paddingLeft="5dp"
             android:background="#3e4750"
-            android:id="@+id/etContact"
+            android:id="@+id/etProfileContact"
             android:drawablePadding="10dp"
             android:textColor="#fcfefb"
             android:hint="Contact"
@@ -118,16 +118,47 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_width="match_parent"
-        android:text="Signup"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnProfileDelete"
+        android:src="@drawable/btndelete"
+        android:layout_width="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        android:background="@drawable/rounded_button"
-        android:layout_height="36dp" />
+        android:layout_marginBottom="80dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/tvProfileSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:layout_alignParentLeft="true"
+        android:textSize="15dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="68dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnProfileSave"
+        android:src="@drawable/btnsave"
+        android:layout_width="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/tvProfileDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Profile"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="68dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"/>
 </RelativeLayout>

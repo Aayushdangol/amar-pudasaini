@@ -22,7 +22,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
     private List<Movie> movies;
     private List<Genre> allGenres;
 
-    public MoviesAdapter(List<Movie> movies, List<Genre> allGenres) {
+    public MoviesAdapter(List<Movie> movies) {
         this.movies = movies;
         this.allGenres = allGenres;
     }

@@ -21,7 +21,7 @@ import java.util.List;
 import Interface.OnGetMoviesCallback;
 import model.Movie;
 
-public class Home extends Fragment {
+public class Home extends Fragment{
     private RecyclerView movieslist;
     private MoviesAdapter adapter;
     private MoviesRepository moviesRepository;
@@ -34,28 +34,28 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-//        View view = inflater.inflate(R.layout.fragment_home, container, false);
-//
-//        moviesRepository = MoviesRepository.getInstance();
-//
-//        movieslist = view.findViewById(R.id.recyclerView);
-//       // movieslist.setLayoutManager(new LinearLayoutManager(this));
-//
-//        moviesRepository.getMovies( new OnGetMoviesCallback() {
-//            @Override
-//            public void onSuccess(List<Movie> movies) {
-//                //adapter = new MoviesAdapter( movies );
-//                movieslist.setAdapter( adapter );
-//            }
-//
-//            @Override
-//            public void onError() {
-//
-//                //Toast.makeText( ViewPagerActivity.this , "Please Check your Internet Connection", Toast.LENGTH_SHORT ).show();
-//            }
-//        } );
-//
+       View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        moviesRepository = MoviesRepository.getInstance();
+
+        movieslist = view.findViewById(R.id.recyclerView);
+        //movieslist.setLayoutManager(new LinearLayoutManager(this));
+
+        moviesRepository.getMovies( new OnGetMoviesCallback() {
+            @Override
+            public void onSuccess(List<Movie> movies) {
+                adapter = new MoviesAdapter(movies);
+                movieslist.setAdapter( adapter );
+            }
+
+            @Override
+            public void onError() {
+
+               Toast.makeText( getContext(), "Please Check your Internet Connection", Toast.LENGTH_SHORT ).show();
+            }
+        } );
+
         return null;
     }
-//
+
 }

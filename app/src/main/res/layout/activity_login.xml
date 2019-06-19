@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/imgloginLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/logosplash"
+        android:src="@drawable/moviehubicon"
         android:layout_centerHorizontal="true"/>
 
         <LinearLayout
@@ -34,7 +34,8 @@
             <EditText
                 android:id="@+id/etusername"
                 android:hint="Username"
-                android:textColorHint="#fff"
+                android:textColorHint="#fcfefb"
+                android:textColor="#fcfefb"
                 android:drawableLeft="@drawable/users"
                 android:drawablePadding="10dp"
                 android:textSize="15dp"
@@ -43,36 +44,36 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="35dp" />
+                android:layout_height="40dp" />
 
 
             <EditText
                 android:id="@+id/etPassword"
                 android:drawableLeft="@drawable/pass"
-                android:drawableRight="@drawable/eye"
-                android:paddingRight="5dp"
+                android:paddingRight="7dp"
                 android:hint="Password"
+                android:textColor="#fcfefb"
                 android:drawablePadding="10dp"
-                android:textColorHint="#ffffff"
+                android:textColorHint="#fcfefb"
                 android:background="#3e4750"
                 android:textSize="15dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="35dp" />
+                android:layout_height="40dp" />
 
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="75dp"
-                android:layout_marginRight="75dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
                 android:layout_width="match_parent"
                 android:text="Login"
                 android:textSize="20dp"
                 android:textAllCaps="false"
                 android:background="@drawable/rounded_button"
-                android:layout_height="40dp" />
+                android:layout_height="36dp" />
 
         </LinearLayout>
 

@@ -1,9 +1,12 @@
 package com.moviehub;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import adapter.ViewPagerAdapter;
 import fragments.Genre;
@@ -16,6 +19,9 @@ public class ViewPagerActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tabLayout;
 
+    private ImageButton btnProfile;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +29,8 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         tabLayout=findViewById(R.id.tabId);
         viewPager=findViewById(R.id.viewpager);
+
+        btnProfile=findViewById( R.id. profile);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Home(),"Home");
@@ -33,4 +41,13 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        btnProfile.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( ViewPagerActivity.this, ProfileActivity.class );
+                startActivity( intent );
+            }
+        } );
+
     }}
