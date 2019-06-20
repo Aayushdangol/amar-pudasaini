@@ -45,7 +45,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         btnProfile.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( ViewPagerActivity.this, ProfileActivity.class );
+                Intent intent = new Intent( ViewPagerActivity.this, GetProfile.class );
                 startActivity( intent );
             }
         } );

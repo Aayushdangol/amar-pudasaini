@@ -9,9 +9,11 @@
 
     <ImageView
         android:id="@+id/imgProfileViewBack"
-        android:layout_width="wrap_content"
-        android:layout_height="295dp"
-        android:src="@drawable/movieimage"/>
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/moviebackground"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,33 +23,128 @@
 
         <TextView
             android:id="@+id/tvProfileDisplayName"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:textColor="#fcfefb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Full Name"
-            android:textSize="30dp"/>
+            android:textSize="25dp"/>
 
         <TextView
-            android:id="@+id/tvProfileDisplayEmail"
+            android:id="@+id/tvProfileDisplayDescription"
             android:textStyle="italic"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:textColor="#fcfefb"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="email"
-            android:textSize="15dp"/>
+            android:text="description about yourself"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:background="#3e4750"
+            android:layout_height="140dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfileDisplayEmail"
+                android:layout_width="28dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/email"/>
+
+            <TextView
+                android:id="@+id/tvProfileDisplayEmail"
+                android:textColor="#fcfefb"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/imgProfileDisplayEmail"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="example@gmail.com"
+                android:textSize="16dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfileDisplayContact"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/imgProfileDisplayEmail"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/telephone"/>
+
+            <TextView
+                android:id="@+id/tvProfileDisplayContact"
+                android:layout_below="@id/tvProfileDisplayEmail"
+                android:layout_toRightOf="@id/imgProfileDisplayContact"
+                android:textColor="#fcfefb"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="+977-9843647666"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfileDisplayAddress"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/imgProfileDisplayContact"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/maps"/>
+
+            <TextView
+                android:id="@+id/tvProfileDisplayAddress"
+                android:textColor="#fcfefb"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvProfileDisplayContact"
+                android:layout_toRightOf="@id/imgProfileDisplayAddress"
+                android:text="700 Dongui Hangzhou, China"
+                android:textSize="16dp"/>
+
+        </RelativeLayout>
+
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnProfileEdit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:src="@drawable/edit"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgProfile"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_below="@id/imgProfileViewBack"
         android:layout_centerHorizontal="true"
-        android:layout_height="150dp"
-        android:layout_marginTop="-70dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-65dp"
         android:src="@drawable/profileicon" />
+
+    <TextView
+        android:id="@+id/tvProfileDisplayEditicon"
+        android:textColor="#fcfefb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit profile"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textSize="15dp"/>
+
 
 </RelativeLayout>

@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/splash"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
         android:layout_gravity="center"
-        android:src="@drawable/moviehubicon"
+        android:src="@drawable/moviehubiconfinal"
         />
 
 </LinearLayout>

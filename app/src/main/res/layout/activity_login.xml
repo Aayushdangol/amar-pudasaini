@@ -12,7 +12,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/moviehubicon"
+        android:src="@drawable/moviehubiconfinal"
         android:layout_centerHorizontal="true"/>
 
         <LinearLayout
@@ -32,11 +32,11 @@
                 android:textColor="#ffffff"/>
 
             <EditText
-                android:id="@+id/etusername"
-                android:hint="Username"
+                android:id="@+id/etmail"
+                android:hint="Email"
                 android:textColorHint="#fcfefb"
                 android:textColor="#fcfefb"
-                android:drawableLeft="@drawable/users"
+                android:drawableLeft="@drawable/mail"
                 android:drawablePadding="10dp"
                 android:textSize="15dp"
                 android:background="#3e4750"
