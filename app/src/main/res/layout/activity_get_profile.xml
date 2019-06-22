@@ -10,10 +10,10 @@
     <ImageView
         android:id="@+id/imgProfileViewBack"
         android:layout_width="match_parent"
-        android:layout_height="185dp"
+        android:layout_height="165dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/moviebackground"/>
+        android:background="@drawable/backgradient"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Full Name"
-            android:textSize="25dp"/>
+            android:textSize="22dp"/>
 
         <TextView
             android:id="@+id/tvProfileDisplayDescription"
@@ -116,35 +116,41 @@
 
     </LinearLayout>
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <Button
         android:id="@+id/btnProfileEdit"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:text="Edit Profile"
+        android:textSize="14dp"
+        android:textColor="#fff"
+        android:background="@drawable/btnoutline"
+        android:layout_above="@id/btnProfileLogout"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnProfileLogout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="LOGOUT"
+        android:textSize="14dp"
+        android:textColor="#fff"
+        android:background="@drawable/btnoutline"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="55dp"
-        android:src="@drawable/edit"/>
+        android:layout_marginBottom="30dp"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgProfile"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_below="@id/imgProfileViewBack"
         android:layout_centerHorizontal="true"
-        android:layout_height="120dp"
+        android:layout_height="110dp"
         android:layout_marginTop="-65dp"
         android:src="@drawable/profileicon" />
-
-    <TextView
-        android:id="@+id/tvProfileDisplayEditicon"
-        android:textColor="#fcfefb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="edit profile"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:textSize="15dp"/>
-
 
 </RelativeLayout>

@@ -9,10 +9,8 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import adapter.ViewPagerAdapter;
-import fragments.Genre;
-import fragments.Home;
-import fragments.Movies;
 import fragments.Recommended;
+import fragments.Movies;
 import fragments.TV;
 
 public class ViewPagerActivity extends AppCompatActivity {
@@ -33,11 +31,9 @@ public class ViewPagerActivity extends AppCompatActivity {
         btnProfile=findViewById( R.id. profile);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Home(),"Home");
-        //adapter.addFragment(new Recommended(),"Popular");
+        adapter.addFragment(new Recommended(),"Recommended");
         adapter.addFragment(new Movies(),"Movies");
         adapter.addFragment(new TV(),"TV");
-        adapter.addFragment(new Genre(),"Genre");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);

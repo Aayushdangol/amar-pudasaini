@@ -16,8 +16,8 @@
 
         <ImageButton
             android:id="@+id/imgDashboardlogo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/logodashboard"
@@ -39,9 +39,9 @@
                 android:layout_toLeftOf="@id/profile"
                 android:background="@drawable/roundbtnsearch"
                 android:textColorHint="#fff"
-                android:layout_marginTop="21dp"
+                android:layout_marginTop="19dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="12sp"/>
+                android:layout_marginRight="10sp"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -49,14 +49,14 @@
                 android:src="@drawable/search"
                 android:background="@drawable/roundbtnsearch"
                 android:layout_marginRight="18dp"
-                android:layout_marginTop="29dp"
+                android:layout_marginTop="28dp"
                 android:layout_toLeftOf="@id/profile"/>
 
             <ImageButton
                 android:id="@+id/profile"
-                android:layout_width="50dp"
+                android:layout_width="48dp"
                 android:layout_marginTop="16sp"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="12dp"
                 android:background="@drawable/profileicon"/>

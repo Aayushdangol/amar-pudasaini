@@ -51,7 +51,6 @@ public class MoviesRepository {
 
                     }
 
-
                     @Override
                     public void onFailure(Call<MoviesResponse> call, Throwable t) {
                         callback.onError();

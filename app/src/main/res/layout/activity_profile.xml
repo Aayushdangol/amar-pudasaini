@@ -142,7 +142,7 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/btnProfileSave"
-        android:src="@drawable/btnsave"
+        android:src="@drawable/edit"
         android:layout_width="50dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="85dp"

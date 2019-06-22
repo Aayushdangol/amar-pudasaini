@@ -1,13 +1,123 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#343b45"
     tools:context="fragments.Recommended">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/etRecommended"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginLeft="22dp"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:text="Recommended For You "/>
 
-</FrameLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/etRecommended"/>
+
+    <ImageButton
+        android:id="@+id/popularMovies"
+        android:layout_alignParentLeft="true"
+        android:layout_width="150dp"
+        android:layout_below="@id/etRecommended"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20sp"
+        android:layout_height="155dp"
+        android:background="@drawable/popularmovies"
+        />
+
+    <TextView
+        android:id="@+id/etPopularMovies"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:text="Popular Movies"
+        android:layout_below="@id/popularMovies"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageButton
+        android:layout_below="@id/etRecommended"
+        android:id="@+id/popularTV"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="20sp"
+        android:layout_height="155dp"
+        android:background="@drawable/populartv"
+        />
+
+    <TextView
+        android:id="@+id/etPopularTV"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:text="Popular TV"
+        android:layout_below="@id/popularTV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageButton
+        android:id="@+id/topRatedMovies"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/etPopularMovies"
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20sp"
+        android:layout_height="155dp"
+        android:background="@drawable/topratedmoviees"
+        />
+
+    <TextView
+        android:id="@+id/etTopRatedMovies"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:layout_alignParentLeft="true"
+        android:text="Top Rated Movies"
+        android:gravity="center"
+        android:layout_below="@id/topRatedMovies"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageButton
+        android:id="@+id/topRatedTV"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20sp"
+        android:layout_below="@id/etPopularTV"
+        android:layout_height="155dp"
+        android:background="@drawable/topratedtv"
+        />
+
+    <TextView
+        android:id="@+id/etTopRatedTV"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:text="Top Rated TV"
+        android:gravity="center"
+        android:layout_below="@id/topRatedTV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
