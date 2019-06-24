@@ -1,7 +1,5 @@
 package com.moviehub;
 
-import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -21,24 +19,24 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
 
     private List<Movie> movies;
     private List<Genre> allGenres;
-
+//
     public MoviesAdapter(List<Movie> movies) {
         this.movies = movies;
         this.allGenres = allGenres;
     }
 
-    @NonNull
+//    @NonNull
     @Override
-    public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.movielist,viewGroup,false);
+    public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_movie,parent,false);
         return new MovieViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MovieViewHolder movieViewHolder, int i) {
+    public void onBindViewHolder(@NonNull MovieViewHolder holder, int position) {
 
-        movieViewHolder.bind(movies.get(i));
+        holder.bind(movies.get(position));
     }
 
     @Override
@@ -48,18 +46,19 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
 
     public class MovieViewHolder extends RecyclerView.ViewHolder{
 
-        //ImageView imgmoviePoster;
+        ImageView imgmoviePoster;
         TextView tvmovieTitle, tvmovieRating, tvmovieDate, tvmovieGenre;
-
+//
         public MovieViewHolder(@NonNull View itemView) {
             super(itemView);
-           // imgmoviePoster=itemView.findViewById(R.id.imgmoviePoster);
+            imgmoviePoster=itemView.findViewById(R.id.imgmoviePoster);
             tvmovieTitle=itemView.findViewById(R.id.tvmovieTitle);
             tvmovieRating=itemView.findViewById(R.id.tvmovieRating);
             tvmovieGenre=itemView.findViewById(R.id.tvmovieGenre);
             tvmovieDate=itemView.findViewById(R.id.tvmovieDate);
 
         }
+
 
         public void bind(Movie movie) {
             tvmovieDate.setText(movie.getReleaseDate().split("-")[0]);
@@ -81,6 +80,5 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
             return TextUtils.join( ",",movieGenres );
         }
     }
-
 
 }

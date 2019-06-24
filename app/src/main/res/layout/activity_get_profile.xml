@@ -10,14 +10,16 @@
     <ImageView
         android:id="@+id/imgProfileViewBack"
         android:layout_width="match_parent"
-        android:layout_height="165dp"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/backgradient"/>
+        android:background="@drawable/moviebackgroundfinal"/>
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#3e4750"
         android:orientation="vertical"
         android:layout_below="@id/imgProfileViewBack">
 
@@ -43,9 +45,9 @@
             android:textSize="12dp"/>
 
         <RelativeLayout
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="45dp"
             android:layout_width="match_parent"
-            android:background="#3e4750"
+            android:background="#343b45"
             android:layout_height="140dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -146,11 +148,11 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgProfile"
-        android:layout_width="110dp"
+        android:layout_width="105dp"
         android:layout_below="@id/imgProfileViewBack"
         android:layout_centerHorizontal="true"
-        android:layout_height="110dp"
-        android:layout_marginTop="-65dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="-50dp"
         android:src="@drawable/profileicon" />
 
 </RelativeLayout>

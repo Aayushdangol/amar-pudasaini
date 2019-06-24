@@ -1,5 +1,7 @@
 package com.moviehub;
 
+import android.support.annotation.NonNull;
+
 import Interface.MovieAPI;
 import Interface.OnGetMoviesCallback;
 import model.MoviesResponse;
@@ -33,11 +35,12 @@ public class MoviesRepository {
         return repository;
     }
 
-    public void getMovies (final OnGetMoviesCallback callback){
+    public void getMovies(final OnGetMoviesCallback callback){
+        //Callback<MoviesResponse> call = new Callback<MoviesResponse>(){
         api.getPopularMovies("6b7a36f57e51efb59ee80f78bf0d08e0",LANGUAGE,1)
                 .enqueue(new Callback<MoviesResponse>() {
                     @Override
-                    public void onResponse(Call<MoviesResponse> call, Response<MoviesResponse> response) {
+                    public void onResponse(@NonNull Call<MoviesResponse> call, @NonNull Response<MoviesResponse> response) {
                         if (response.isSuccessful()){
                             MoviesResponse moviesResponse = response.body();
                             if (moviesResponse != null && moviesResponse.getMovies() != null) {

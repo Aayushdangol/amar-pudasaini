@@ -12,10 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".GetProfile"></activity>
+        <activity android:name=".TopRatedMoviesActivity"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".TopRatedTVActivity"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".PopularTVActivity"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".PopularMoviesActivity"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".GetProfile" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".ViewPagerActivity" />
+        <activity android:name=".ViewPagerActivity"
+            android:windowSoftInputMode="stateHidden"
+            />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

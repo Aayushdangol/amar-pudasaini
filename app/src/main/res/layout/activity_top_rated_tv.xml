@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#343b45"
+    tools:context=".TopRatedTVActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/imgTopRatedTVDashboardlogo"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logodashboard"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTopRatedTVDashboardSearch"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:hint="search"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="3dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@id/btnTopRatedTVDashboardprofile"
+            android:background="@drawable/roundbtnsearch"
+            android:textColorHint="#fff"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10sp"/>
+
+        <ImageButton
+            android:id="@+id/btnTopRatedTVDashboardSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:background="@drawable/roundbtnsearch"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@id/btnTopRatedTVDashboardprofile"/>
+
+        <ImageButton
+            android:id="@+id/btnTopRatedTVDashboardprofile"
+            android:layout_width="48dp"
+            android:layout_marginTop="16sp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/profileicon"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTopRatedTVActivity"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/imgTopRatedTVDashboardlogo"
+        android:background="#3e4750"
+        android:text="Top Rated TV"
+        android:textSize="18dp"
+        android:textColor="#fff"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/TopRatedTVrecylerView"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/tvTopRatedTVActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
