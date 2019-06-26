@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#343b45"
-    tools:context=".TopRatedMoviesActivity">
+    tools:context=".user.TopRatedMoviesActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

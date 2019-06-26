@@ -7,37 +7,22 @@ import java.util.List;
 
 public class Movie {
 
-    @SerializedName("id")
-    @Expose
     private int id;
-
-    @SerializedName("title")
-    @Expose
     private String title;
-
-    @SerializedName("vote_average")
-    @Expose
-    private float rating;
-
-    @SerializedName("genre_ids")
-    @Expose
-    private List<Integer> genreIds;
-
-    @SerializedName("release_date")
-    @Expose
+    private String rating;
+    private String genre;
+    private String synopsis;
     private String releaseDate;
+    private String image;
 
-    @SerializedName("poster_path")
-    @Expose
-    private String posterPath;
-
-    public Movie(int id, String title, float rating, List<Integer> genreIds, String releaseDate, String posterPath) {
+    public Movie(int id, String title, String rating, String genre, String synopsis, String releaseDate, String image) {
         this.id = id;
         this.title = title;
         this.rating = rating;
-        this.genreIds = genreIds;
+        this.genre = genre;
+        this.synopsis = synopsis;
         this.releaseDate = releaseDate;
-        this.posterPath = posterPath;
+        this.image = image;
     }
 
     public int getId() {
@@ -56,20 +41,28 @@ public class Movie {
         this.title = title;
     }
 
-    public float getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(float rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
-    public List<Integer> getGenreIds() {
-        return genreIds;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setGenreIds(List<Integer> genreIds) {
-        this.genreIds = genreIds;
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
     }
 
     public String getReleaseDate() {
@@ -80,11 +73,11 @@ public class Movie {
         this.releaseDate = releaseDate;
     }
 
-    public String getPosterPath() {
-        return posterPath;
+    public String getImage() {
+        return image;
     }
 
-    public void setPosterPath(String posterPath) {
-        this.posterPath = posterPath;
+    public void setImage(String image) {
+        this.image = image;
     }
 }

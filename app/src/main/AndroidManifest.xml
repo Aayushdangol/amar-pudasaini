@@ -3,6 +3,8 @@
     package="com.moviehub">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -12,24 +14,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".TopRatedMoviesActivity"
-            android:windowSoftInputMode="stateHidden"
-            />
-        <activity android:name=".TopRatedTVActivity"
-            android:windowSoftInputMode="stateHidden"
-            />
-        <activity android:name=".PopularTVActivity"
-            android:windowSoftInputMode="stateHidden"
-            />
-        <activity android:name=".PopularMoviesActivity"
-            android:windowSoftInputMode="stateHidden"
-            />
-        <activity android:name=".GetProfile" />
-        <activity android:name=".ProfileActivity" />
+        <activity android:name=".admin.AdminTVActivity"></activity>
+        <activity android:name=".admin.AdminMoviesActivity">
+
+        </activity>
+        <activity android:name=".admin.AdminTopRatedTVActivity" />
+        <activity android:name=".admin.AdminTopRatedMoviesActivity" />
+        <activity android:name=".admin.AdminPopularTVActivity" />
+        <activity android:name=".admin.AdminPopularMoviesActivity" />
+        <activity android:name=".admin.AdminDashboardActivity" >
+
+        </activity>
+
+        <activity
+            android:name=".user.TopRatedMoviesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".user.TopRatedTVActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".user.PopularTVActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".user.PopularMoviesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".user.GetProfile" />
+        <activity android:name=".user.ProfileActivity" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".ViewPagerActivity"
-            android:windowSoftInputMode="stateHidden"
-            />
+        <activity
+            android:name=".ViewPagerActivity"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

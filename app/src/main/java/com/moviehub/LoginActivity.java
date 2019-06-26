@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.moviehub.admin.AdminDashboardActivity;
+
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;
     private Button btnLogin, btnRegister;
@@ -32,8 +34,15 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( LoginActivity.this, ViewPagerActivity.class );
-                startActivity( intent );
+
+                if(etUsername.getText().toString().equals("admin") && etPassword.getText().toString().equals("admin")){
+                    Intent intent = new Intent( LoginActivity.this, AdminDashboardActivity.class );
+                    startActivity( intent );
+                }else{
+                    Intent intent = new Intent( LoginActivity.this, ViewPagerActivity.class );
+                    startActivity( intent );
+                }
+
             }
         } );
     }

@@ -9,13 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.moviehub.GetProfile;
-import com.moviehub.PopularMoviesActivity;
-import com.moviehub.PopularTVActivity;
+import com.moviehub.user.PopularMoviesActivity;
+import com.moviehub.user.PopularTVActivity;
 import com.moviehub.R;
-import com.moviehub.TopRatedMoviesActivity;
-import com.moviehub.TopRatedTVActivity;
-import com.moviehub.ViewPagerActivity;
+import com.moviehub.user.TopRatedMoviesActivity;
+import com.moviehub.user.TopRatedTVActivity;
 
 public class Recommended extends Fragment{
 

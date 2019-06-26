@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.moviehub.user.GetProfile;
+
 import adapter.ViewPagerAdapter;
 import fragments.Recommended;
 import fragments.Movies;

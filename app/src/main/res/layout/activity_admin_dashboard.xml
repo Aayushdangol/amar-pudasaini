@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343b45"
+    tools:context=".admin.AdminDashboardActivity">
+
+        <ImageButton
+            android:id="@+id/imgAdminDashboardlogo"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logodashboard"/>
+
+    <ImageButton
+        android:id="@+id/btnadminlogout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/logout"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnadminlogout"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="15dp"
+        android:text="Movie Hub Admin Panel"
+        android:textColor="#fff"
+        android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#fff"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/imgAdminDashboardlogo"/>
+
+       <ScrollView
+           android:layout_below="@id/view1"
+           android:layout_width="match_parent"
+           android:layout_marginBottom="25dp"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageButton
+                   android:id="@+id/adminpopularMovies"
+                   android:layout_alignParentLeft="true"
+                   android:layout_width="150dp"
+                   android:layout_marginTop="22dp"
+                   android:layout_marginLeft="20sp"
+                   android:layout_height="155dp"
+                   android:background="@drawable/popularmovies"
+                   />
+
+               <TextView
+                   android:id="@+id/tvadminPopularMovies"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#fff"
+                   android:gravity="center"
+                   android:layout_alignParentLeft="true"
+                   android:text="Popular Movies"
+                   android:layout_below="@id/adminpopularMovies"
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   />
+
+               <ImageButton
+                   android:id="@+id/adminpopularTV"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="150dp"
+                   android:layout_marginTop="22dp"
+                   android:layout_marginRight="20sp"
+                   android:layout_height="155dp"
+                   android:background="@drawable/populartv"
+                   />
+
+               <TextView
+                   android:id="@+id/tvadminPopularTV"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#fff"
+                   android:gravity="center"
+                   android:layout_alignParentRight="true"
+                   android:text="Popular TV"
+                   android:layout_below="@id/adminpopularTV"
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   />
+
+               <ImageButton
+                   android:id="@+id/admintopRatedMovies"
+                   android:layout_alignParentLeft="true"
+                   android:layout_below="@id/tvadminPopularMovies"
+                   android:layout_width="150dp"
+                   android:layout_marginTop="25dp"
+                   android:layout_marginLeft="20sp"
+                   android:layout_height="155dp"
+                   android:background="@drawable/topratedmoviees"
+                   />
+
+               <TextView
+                   android:id="@+id/tvadminTopRatedMovies"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#fff"
+                   android:layout_alignParentLeft="true"
+                   android:text="Top Rated Movies"
+                   android:gravity="center"
+                   android:layout_below="@id/admintopRatedMovies"
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   />
+
+               <ImageButton
+                   android:id="@+id/adminMovies"
+                   android:layout_alignParentLeft="true"
+                   android:layout_below="@id/tvadminTopRatedMovies"
+                   android:layout_width="150dp"
+                   android:layout_marginTop="25dp"
+                   android:layout_marginLeft="20sp"
+                   android:layout_height="155dp"
+                   android:background="@drawable/Movies"
+                   />
+
+               <TextView
+                   android:id="@+id/etMovies"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#fff"
+                   android:layout_alignParentLeft="true"
+                   android:text="Movies"
+                   android:gravity="center"
+                   android:layout_below="@id/adminMovies"
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   />
+
+
+
+               <ImageButton
+                   android:id="@+id/admintopRatedTV"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="150dp"
+                   android:layout_marginTop="25dp"
+                   android:layout_marginRight="20sp"
+                   android:layout_below="@id/tvadminPopularTV"
+                   android:layout_height="155dp"
+                   android:background="@drawable/topratedtv"
+                   />
+
+               <TextView
+                   android:id="@+id/tvadminTopRatedTV"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#fff"
+                   android:layout_alignParentRight="true"
+                   android:text="Top Rated TV"
+                   android:gravity="center"
+                   android:layout_below="@id/admintopRatedTV"
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   />
+
+               <ImageButton
+                   android:id="@+id/adminTV"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="150dp"
+                   android:layout_marginTop="25dp"
+                   android:layout_marginRight="20sp"
+                   android:layout_below="@id/tvadminTopRatedTV"
+                   android:layout_height="155dp"
+                   android:background="@drawable/TV"
+                   />
+
+               <TextView
+                   android:id="@+id/tvTV"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#fff"
+                   android:layout_alignParentRight="true"
+                   android:text="TV"
+                   android:gravity="center"
+                   android:layout_below="@id/adminTV"
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   />
+
+           </RelativeLayout>
+
+       </ScrollView>
+
+</RelativeLayout>
