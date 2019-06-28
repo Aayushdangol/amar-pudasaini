@@ -130,7 +130,7 @@
                    android:layout_marginTop="25dp"
                    android:layout_marginLeft="20sp"
                    android:layout_height="155dp"
-                   android:background="@drawable/Movies"
+                   android:background="@drawable/moviesbackground"
                    />
 
                <TextView
@@ -145,8 +145,6 @@
                    android:layout_width="150dp"
                    android:layout_height="wrap_content"
                    />
-
-
 
                <ImageButton
                    android:id="@+id/admintopRatedTV"
@@ -180,7 +178,7 @@
                    android:layout_marginRight="20sp"
                    android:layout_below="@id/tvadminTopRatedTV"
                    android:layout_height="155dp"
-                   android:background="@drawable/TV"
+                   android:background="@drawable/tvbackground"
                    />
 
                <TextView

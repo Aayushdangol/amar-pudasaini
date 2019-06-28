@@ -51,14 +51,14 @@ public class Movies extends Fragment{
             @Override
             public void onResponse(Call<List<Movie>> call, Response<List<Movie>> response) {
                 List<Movie> movieList = response.body();
-                MoviesAdapter moviesAdapter = new MoviesAdapter( movieList,getContext() );
+                MoviesAdapter moviesAdapter = new MoviesAdapter( movieList,getActivity() );
                 moviesRecylerView.setAdapter( moviesAdapter );
-                moviesRecylerView.setLayoutManager( new LinearLayoutManager( getContext() ) );
+                moviesRecylerView.setLayoutManager( new LinearLayoutManager( getActivity() ) );
             }
 
             @Override
             public void onFailure(Call<List<Movie>> call, Throwable t) {
-                Toast.makeText( getContext(), "Error:"+ t.getLocalizedMessage(), Toast.LENGTH_SHORT ).show();
+                Toast.makeText( getActivity(), "Error:"+ t.getLocalizedMessage(), Toast.LENGTH_SHORT ).show();
             }
         } );
     }
